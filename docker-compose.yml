@@ -211,7 +211,7 @@ services:
     image: docker.elastic.co/logstash/logstash:${STACK_VERSION}
     labels:
       co.elastic.logs/module: logstash
-    # user: root
+    user: root
     volumes:
       - certs:/usr/share/logstash/certs
       - logstashdata01:/usr/share/logstash/data
